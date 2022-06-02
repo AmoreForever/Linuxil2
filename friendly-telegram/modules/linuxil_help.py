@@ -28,7 +28,7 @@ class HelpMod(loader.Module):
         "single_mod_header": "📼 <b>{}</b>:",
         "single_cmd": "\n💮 <code>{}{}</code> 👉🏻 ",
         "undoc_cmd": "🦥 No docs",
-        "all_header": "🦊 <b> Linuxil Userbot</b>\n\n<b>🔓 Доступные модули: {}</b>\n<b>🔒 Скрытые: {}</b>",
+        "all_header": "🍥 <b> Linuxil Userbot</b>\n\n<b>🔓 Доступные модули: {}</b>\n<b>🔒 Скрытые: {}</b>",
         "mod_tmpl": "\n{} <code>{}</code>",
         "first_cmd_tmpl": ": ( {}",
         "cmd_tmpl": " | {}",
@@ -45,13 +45,13 @@ class HelpMod(loader.Module):
     def __init__(self):
         self.config = loader.ModuleConfig(
             "core_emoji",
-            "🌌",
+            "🎴",
             lambda: "Core module bullet",
             "linuxil_emoji",
-            "🌠",
+            "🀄",
             lambda: "Geek-only module bullet",
             "plain_emoji",
-            "✨",
+            "🀄",
             lambda: "Plain module bullet",
         )
 
