@@ -30,12 +30,12 @@ class GeekInfoMod(loader.Module):
         "_custom_button_doc": "Custom buttons.",
         "_photo_url_doc": "You can set your own photo to geek info.",
         "default_message": (
-            "<b>🕊️ Linuxil Userbot</b>\n\n"
+            "<b>🎴 Linuxil Userbot</b>\n\n"
             "<b>🤴 Владелец:</b> {owner}\n"
             "<b>⚡ Версия:</b> <i>{version} #{build}</i>\n"
             "<b>{upd}</b>\n\n"
             "<b>📼 Хост: {platform}</b>\n"
-            "<b>🌉 Дата последнего обновления: 01.06.22</b>"
+            "<b>🌉 Дата последнего обновления: 03.06.22</b>"
         ),
     }
 
@@ -56,10 +56,10 @@ class GeekInfoMod(loader.Module):
             False,
             lambda: self.strings("_custom_msg_doc"),
             "custom_buttons",
-            {"text": "👩‍🔧 Support chat", "url": "https://t.me/linuxilchat"},
+            {"text": "🍥 Support chat", "url": "https://t.me/linuxilchat"},
             lambda: self.strings("_custom_button_doc"),
             "photo_url",
-            "https://siasky.net/fAGDN9wfyejR3vtdnjzZVguNQABe7fDB0gguBjF0DF3WjQ",
+            "https://siasky.net/RAAyr7_j46AjAIGg0AmfWGSEHBkN2zrrPJ8YQ7Q0YxiwfQ",
             lambda: self.strings("_photo_url_doc"),
         )
 
