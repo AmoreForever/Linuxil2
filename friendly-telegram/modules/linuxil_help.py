@@ -238,7 +238,7 @@ class HelpMod(loader.Module):
             if core:
                 emoji = self.config["core_emoji"]
             elif inline:
-                emoji = self.config["geek_emoji"]
+                emoji = self.config["linuxil_emoji"]
             else:
                 emoji = self.config["plain_emoji"]
 
