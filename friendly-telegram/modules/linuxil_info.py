@@ -35,7 +35,7 @@ class GeekInfoMod(loader.Module):
             "<b>⚡ Версия:</b> <i>{version} #{build}</i>\n"
             "<b>{upd}</b>\n\n"
             "<b>📼 Хост: {platform}</b>\n"
-            "<b>🌉 Дата последнего обновления: 03.06.22</b>"
+            "<b>💢 Дата последнего обновления: 03.06.22</b>"
         ),
     }
 
@@ -56,10 +56,10 @@ class GeekInfoMod(loader.Module):
             False,
             lambda: self.strings("_custom_msg_doc"),
             "custom_buttons",
-            {"text": "🐾 Support chat", "url": "https://t.me/linuxilchat"},
+            {"text": "👥 Support chat", "url": "https://t.me/linuxilchat"},
             lambda: self.strings("_custom_button_doc"),
             "photo_url",
-            "https://siasky.net/RAAyr7_j46AjAIGg0AmfWGSEHBkN2zrrPJ8YQ7Q0YxiwfQ",
+            "https://i.imgur.com/0Z1ZTpm.jpeg",
             lambda: self.strings("_photo_url_doc"),
         )
 
