@@ -26,8 +26,8 @@ class GeekInfoMod(loader.Module):
 
     strings = {
         "name": "Linuxil_Info",
-        "_custom_msg_doc": "Custom message must have {owner}, {version}, {build}, {upd}, {platform} keywords",
-        "_custom_button_doc": "Custom buttons.",
+        "_custom_msg_doc": "Вы можете использовать эти ключевые слова  {owner}, {version}, {build}, {upd}, {platform} ",
+        "_custom_button_doc": "Пользовательские кнопки.",
         "_photo_url_doc": "You can set your own photo to geek info.",
         "default_message": (
             "<b>🎴 Linuxil Userbot</b>\n\n"
@@ -56,7 +56,7 @@ class GeekInfoMod(loader.Module):
             False,
             lambda: self.strings("_custom_msg_doc"),
             "custom_buttons",
-            {"text": "🍥 Support chat", "url": "https://t.me/linuxilchat"},
+            {"text": "🐾 Support chat", "url": "https://t.me/linuxilchat"},
             lambda: self.strings("_custom_button_doc"),
             "photo_url",
             "https://siasky.net/RAAyr7_j46AjAIGg0AmfWGSEHBkN2zrrPJ8YQ7Q0YxiwfQ",
@@ -73,7 +73,7 @@ class GeekInfoMod(loader.Module):
             upd = (
                 "⚠️ Требуется обновление </b><code>.update</code><b>"
                 if diff
-                else "✅ Уже обновлен"
+                else "📯 Актуальная версия"
             )
         except Exception:
             upd = ""
