@@ -75,7 +75,7 @@ class BackuperMod(loader.Module):
             }
         )
         txt = io.BytesIO(data.encode("utf-8"))
-        txt.name = f"linuxil-mods-{datetime.now().strftime('%d-%m-%Y-%H-%M')}.mods"
+        txt.name = f"ftg-mods-{datetime.now().strftime('%d-%m-%Y-%H-%M')}.mods"
         await self._client.send_file(
             utils.get_chat_id(message),
             txt,
