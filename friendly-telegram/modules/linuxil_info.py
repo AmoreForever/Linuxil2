@@ -56,7 +56,10 @@ class GeekInfoMod(loader.Module):
             False,
             lambda: self.strings("_custom_msg_doc"),
             "custom_buttons",
-            {"text": "👥 Support chat", "url": "https://t.me/linuxilchat"},
+            {"text": "👾 Support chat", "url": "https://t.me/linuxilchat"},
+            lambda: self.strings("_custom_button_doc"),
+            "custom_buttons2",
+            {"text": "👾 LINUXIL", "url": "https://t.me/linuxil1"},
             lambda: self.strings("_custom_button_doc"),
             "photo_url",
             "https://i.imgur.com/0Z1ZTpm.jpeg",
@@ -131,5 +134,6 @@ class GeekInfoMod(loader.Module):
             message=message,
             text=self.build_message(),
             reply_markup=self.config["custom_buttons"],
+            reply_markup=self.config["custom_buttons2"],
             photo=self.config["photo_url"],
         )
