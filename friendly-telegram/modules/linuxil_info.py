@@ -120,6 +120,7 @@ class GeekInfoMod(loader.Module):
                     thumb_url="https://siasky.net/fAGDN9wfyejR3vtdnjzZVguNQABe7fDB0gguBjF0DF3WjQ",  # noqa: E501
                     reply_markup=self.inline._generate_markup(
                         self.config["custom_buttons"]
+                        self.config["custom_buttons2"]
                     ),
                 )
             ],
