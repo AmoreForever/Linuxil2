@@ -34,7 +34,7 @@ class TestMod(loader.Module):
         "set_loglevel": "🚫 <b>Укажите детализацию в виде целого числа или строки.</b>",
         "no_logs": "ℹ️ <b>У вас нет журналов в подробностях {}.</b>",
         "logs_filename": "🗃️linuxil-logs.txt",
-        "logs_caption": "🗞 Журналы GeekTG с подробностями {}",
+        "logs_caption": "🗞 Журналы LINUXIL с подробностями {}",
         "suspend_invalid_time": "🚫 <b>Неверное время для приостановки</b>",
         "suspended": "🥶 <b>Бот заблокирован на</b> <code>{}</code> <b>секунды</b>",
         "results_ping": "💢 <b>Пинг:</b> <code>{}</code> <b>ms</b>",

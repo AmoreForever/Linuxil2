@@ -26,16 +26,16 @@ class GeekInfoMod(loader.Module):
 
     strings = {
         "name": "Linuxil_Info",
-        "_custom_msg_doc": "Custom message must have {owner}, {version}, {build}, {upd}, {platform} keywords",
-        "_custom_button_doc": "Custom buttons.",
+        "_custom_msg_doc": "Вы можете использовать эти ключевые слова  {owner}, {version}, {build}, {upd}, {platform} ",
+        "_custom_button_doc": "Пользовательские кнопки.",
         "_photo_url_doc": "You can set your own photo to geek info.",
         "default_message": (
-            "<b>🕊️ Linuxil Userbot</b>\n\n"
+            "<b>🎴 Linuxil Userbot</b>\n\n"
             "<b>🤴 Владелец:</b> {owner}\n"
             "<b>⚡ Версия:</b> <i>{version} #{build}</i>\n"
             "<b>{upd}</b>\n\n"
             "<b>📼 Хост: {platform}</b>\n"
-            "<b>🌉 Дата последнего обновления: 01.06.22</b>"
+            "<b>💢 Дата последнего обновления: 03.06.22</b>"
         ),
     }
 
@@ -56,10 +56,10 @@ class GeekInfoMod(loader.Module):
             False,
             lambda: self.strings("_custom_msg_doc"),
             "custom_buttons",
-            {"text": "🦋 Support chat", "url": "https://t.me/linuxilchat"},
+            {"text": "👾 Support chat", "url": "https://t.me/linuxilchat"},
             lambda: self.strings("_custom_button_doc"),
             "photo_url",
-            "https://siasky.net/nAH4Zvz2kXx4swH0IrfpNmoBc1ogMQNTmhpwktMYGO9oIA",
+            "https://i.imgur.com/0Z1ZTpm.jpeg",
             lambda: self.strings("_photo_url_doc"),
         )
 
@@ -73,7 +73,7 @@ class GeekInfoMod(loader.Module):
             upd = (
                 "⚠️ Требуется обновление </b><code>.update</code><b>"
                 if diff
-                else "✅ Уже обновлен"
+                else "📯 Актуальная версия"
             )
         except Exception:
             upd = ""
@@ -114,7 +114,7 @@ class GeekInfoMod(loader.Module):
                     description="ℹ This will not compromise any sensitive data",
                     caption=self.build_message(),
                     parse_mode="html",
-                    thumb_url="https://siasky.net/nAH4Zvz2kXx4swH0IrfpNmoBc1ogMQNTmhpwktMYGO9oIA",  # noqa: E501
+                    thumb_url="https://siasky.net/fAGDN9wfyejR3vtdnjzZVguNQABe7fDB0gguBjF0DF3WjQ",  # noqa: E501
                     reply_markup=self.inline._generate_markup(
                         self.config["custom_buttons"]
                     ),

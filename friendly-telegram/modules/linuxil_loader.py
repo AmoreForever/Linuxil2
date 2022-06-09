@@ -14,7 +14,7 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#    Modded by GeekTG Team
+#    Modded by LINUXIL Team
 
 import asyncio
 import importlib
@@ -177,7 +177,7 @@ class LoaderMod(loader.Module):
         super().__init__()
         self.config = loader.ModuleConfig(
             "MODULES_REPO",
-            "https://raw.githubusercontent.com/GeekTG/FTG-Modules/main/",
+            "https://github.com/AmoreForever/FTG-Modules/raw/main",
             lambda m: self.strings("repo_config_doc", m),
         )
 

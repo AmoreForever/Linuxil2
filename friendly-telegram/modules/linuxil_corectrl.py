@@ -107,8 +107,8 @@ class CoreMod(loader.Module):
         module = self.allmodules.get_classname(module)
         return f"{str(chatid)}.{module}" if module else chatid
 
-    async def ftgvercmd(self, message: Message) -> None:
-        """Get GeekTG version"""
+    async def linvercmd(self, message: Message) -> None:
+        """Get LINUXIL version"""
         ver = getattr(main, "__version__", False)
 
         branch = os.popen(
