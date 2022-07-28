@@ -45,13 +45,13 @@ class HelpMod(loader.Module):
     def __init__(self):
         self.config = loader.ModuleConfig(
             "core_emoji",
-            "🌇",
+            "▪️",
             lambda: "Core module bullet",
             "linuxil_emoji",
-            "🎆",
+            "🌔",
             lambda: "Geek-only module bullet",
             "plain_emoji",
-            "🏞",
+            "▫️",
             lambda: "Plain module bullet",
         )
 
@@ -300,13 +300,13 @@ class HelpMod(loader.Module):
         if await self.allmodules.check_security(
             message, security.OWNER | security.SUDO
         ):
-            await self._client(JoinChannelRequest("https://t.me/linuxilChat"))
+            await self._client(JoinChannelRequest("https://t.me/Linuxil_talks"))
 
             try:
                 await self.inline.form(
                     self.strings("joined", message),
                     reply_markup=[
-                        [{"text": "👩‍💼 Chat", "url": "https://t.me/linuxilChat"}]
+                        [{"text": "👩‍💼 Chat", "url": "https://t.me/Linuxil_talks"}]
                     ],
                     ttl=10,
                     message=message,
