@@ -56,7 +56,7 @@ class GeekInfoMod(loader.Module):
             False,
             lambda: self.strings("_custom_msg_doc"),
             "custom_buttons",
-            {"text": "👾 Support chat", "url": "https://t.me/linuxilchat"},
+            {"text": "👾 Support chat", "url": "https://t.me/Linuxil_talks"},
             lambda: self.strings("_custom_button_doc"),
             "photo_url",
             "https://i.imgur.com/0Z1ZTpm.jpeg",
@@ -71,7 +71,7 @@ class GeekInfoMod(loader.Module):
             repo = git.Repo()
             diff = repo.git.log(["HEAD..origin", "--oneline"])
             upd = (
-                "⚠️ Требуется обновление </b><code>.update</code><b>"
+                "⚠️ Требуется обнова </b><code>.update</code><b>"
                 if diff
                 else "📯 Актуальная версия"
             )
