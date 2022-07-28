@@ -30,12 +30,10 @@ class GeekInfoMod(loader.Module):
         "_custom_button_doc": "Пользовательские кнопки.",
         "_photo_url_doc": "You can set your own photo to geek info.",
         "default_message": (
-            "<b>🎴 Linuxil Userbot</b>\n\n"
             "<b>🤴 Владелец:</b> {owner}\n"
             "<b>⚡ Версия:</b> <i>{version} #{build}</i>\n"
             "<b>{upd}</b>\n\n"
             "<b>📼 Хост: {platform}</b>\n"
-            "<b>💢 Дата последнего обновления: 03.06.22</b>"
         ),
     }
 
